@@ -1,6 +1,6 @@
 import { Response } from "express";
-import pool from "../models/db";
-import { AuthRequest, Todo } from "../models/types";
+import pool from "../models/db.js";
+import { AuthRequest, Todo } from "../models/types.js";
 
 export const createTodo = async (req: AuthRequest, res: Response) => {
   const { title } = req.body;

@@ -1,4 +1,4 @@
-import { AuthRequest } from "../models/types";
+import { AuthRequest } from "../models/types.js";
 import { Response } from "express";
 
 export const getUser = async (req: AuthRequest, res: Response) => {

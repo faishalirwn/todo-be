@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import "dotenv/config";
-import pool from "../models/db";
-import { User } from "../models/types";
+import pool from "../models/db.js";
+import { User } from "../models/types.js";
 
 interface AuthRequest extends Request {
   user?: User;

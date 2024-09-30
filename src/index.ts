@@ -1,9 +1,9 @@
 import express, { Application, Request, Response } from "express";
 import "dotenv/config";
 import cors from "cors";
-import authRoutes from "./routes/authRoutes";
-import todoRoutes from "./routes/todoRoutes";
-import userRoutes from "./routes/userRoutes";
+import authRoutes from "./routes/authRoutes.js";
+import todoRoutes from "./routes/todoRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 import helmet from "helmet";
 
 const app: Application = express();
