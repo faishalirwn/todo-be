@@ -5,9 +5,11 @@ import authRoutes from "./routes/authRoutes.js";
 import todoRoutes from "./routes/todoRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import helmet from "helmet";
+import logger from "pino-http";
 
 const app: Application = express();
 
+app.use(logger());
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
